@@ -1,14 +1,100 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
+  "subnodes": {
+    category: 'Subnodes',
+    array: [
+    {
+      name: 'Subnode 1',
+      allocation: '1000',
+      sbus_used: {
+        2020: 333,
+        2019: 300,
+        2018: 200,
+        2017: 100,
+      },
+      children: {
+        category: 'Accounts',
+        array: [
+          {
+            name: 'Account 1',
+            allocation: '1000',
+            sbus_used: {
+              2020: 33,
+              2019: 30,
+              2018: 20,
+              2017: 10,
+            },
+          },
+          {
+            name: 'Account 2',
+            allocation: '1000',
+            sbus_used: {
+              2020: 33,
+              2019: 30,
+              2018: 20,
+              2017: 10,
+            },
+          },
+        ],
+      },
+    },
+    {
+      name: 'Subnode 2',
+      allocation: '1000',
+      sbus_used: {
+        2020: 333,
+        2019: 300,
+        2018: 200,
+        2017: 100,
+      },
+      children: {
+        category: 'Accounts',
+        array: [
+          {
+            name: 'Accounts 1',
+            allocation: '1000',
+            sbus_used: {
+              2020: 33,
+              2019: 30,
+              2018: 20,
+              2017: 10,
+            },
+          },
+          {
+            name: 'Accounts 2',
+            allocation: '1000',
+            sbus_used: {
+              2020: 33,
+              2019: 30,
+              2018: 20,
+              2017: 10,
+            },
+          },
+        ],
+      },
+    },
+    ],
+  },
+
+  "nodes": {
+    category: 'Nodes',
+    array: [
+    {
+      name: 'Node 1',
+      id: 'NID001',
+      allocation: '3000',
+      sbus_used: {
+        2020: 1000,
+        2019: 900,
+        2018: 600,
+        2017: 300,
+      },
+      children: {
+        category: 'Subnodes',
+        array: [],
+      },
+    },
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
   }
 }
+
+
